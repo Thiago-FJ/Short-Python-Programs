@@ -1,0 +1,12 @@
+text = input("digite o texto q deseja verificar se é palíndromo: ")
+teste = ''
+limite = 0
+text = text.replace(" ", "")
+text=text.upper()
+for letras in text:
+    limite+=1
+while limite>=0:
+    teste += text[(limite-1):limite]
+    limite-=1
+if text==teste:print ('é um palindromo')
+else: print ('não é um palindromo')

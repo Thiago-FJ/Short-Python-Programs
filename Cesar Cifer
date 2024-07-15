@@ -1,0 +1,20 @@
+text = input("escolha uma mensagem para encriptar: ")
+val = int(input("escolha o valor de deslocacemnto: "))
+while val>25:
+    val =int(input("número escolhido maior q o permitido, tente novamente: "))
+cifra =''
+num = ''
+for letra in text:
+    if letra.isspace():
+        cifra+=" "
+        continue
+    if not letra.isalpha():
+        num +=letra
+        continue
+    code = ord(letra) + val
+    if code>90:
+        if letra.isupper():code = (code - 90) + 64
+        elif letra.islower():
+            if code>122:code=(code - 122)+96
+    cifra += chr(code)
+print (cifra +" "+ num)

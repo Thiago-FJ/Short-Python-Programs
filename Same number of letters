@@ -1,0 +1,7 @@
+text1 = input("digite o primeiro texto: ").upper()
+text2 = input("digite o __segundo texto: ").upper()
+for letras in text1:
+    if text1.count(letras)!=text2.count(letras):
+        print("não tem a mesma quantidade de letras")
+        exit()
+print ("tem a mesma quantidade de letras")

@@ -1,0 +1,12 @@
+data = input("digite sua data de nascismento: ")
+vida = 0
+v2=""
+for num in data:
+    vida+=int(num)
+while vida>9:
+    if vida>9:
+        v2=str(vida)
+        vida = 0
+        for num in v2:
+            vida+=int(num)
+print ("Seu dígito da vida é: ",vida)

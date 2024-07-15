@@ -1,0 +1,13 @@
+palavra = input("digite a palavra: ")
+lugar = input("digite onde q ela vai ser procurada: ")
+limite = 0
+for letras in palavra:
+    limite+=1
+while limite>=0:
+    if lugar.find(palavra[limite:(limite-1)]) == -1:
+        print("a palavra não está aí")
+        exit()
+    else:
+        limite -=1
+        continue
+print("a palavra está aí")
